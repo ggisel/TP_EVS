@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link href="css/styleregistrarse.css" rel="stylesheet">
+    <script src="./js/cuentas.js"></script>
+  </head>
+  <body>
+
+    <div class="formulario">
+        <h1>Registro</h1>
+        <form>
+            <div class="username">
+                <input type="text" id="nombreUsuario" required>
+                <label>Nombre de usuario</label>
+            </div>
+            <div class="username">
+                <input type="password" id="contrasenia" required>
+                <label>Contraseña</label>
+            </div>
+            <div class="username">
+                <input type="password" id="contrasenia2" required>
+                <label>Repetir Contraseña</label>
+            </div>
+
+            <div class="username">
+                <input type="number" id="DNI" required>
+                <label>DNI</label>
+            </div>
+
+            <div class="username">
+                <input type="text" id="nombres" required>
+                <label>Nombre/s</label>
+            </div>
+            <div class="username">
+                <input type="text" id="apellido" required>
+                <label>Apellido</label>
+            </div>
+            <div class="username" id="direccion">
+                <input type="text" required>
+                <label>Direccion</label>
+            </div>
+
+            <div class="username">
+                <input type="date" id="fechaNac" required>
+                <label>Fecha de nacimiento</label>
+            </div>
+
+            <div id="medios" class="username">
+                
+                  <select id="medioPago">
+                      Medio de pago
+                      <option disabled selected>Seleccione un método de pago</option>
+                      <option>Tarjeta de crédito</option>
+                      <option>Cuenta Bancaria</option>
+                      <option>Mercado pago</option>
+                  </select>
+                
+            </div>
+            <div class="username">
+                <input type="text" id="idMedioPago" required>
+                <label>Nro medio de pago asociado</label>
+            </div>
+            
+            <div class="username">
+                <input type="tel" id="telefono" required>
+                <label>Nro de telefono</label>
+            </div>
+            
+            <input id="boton-registro" onclick="registrarse();" type="button" value="Registrarse">
+            
+        </form>
+
+    </div>
+  </body>
+  
+</html>

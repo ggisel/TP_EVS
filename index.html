@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link href="./css/style.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    
+  </head>
+  <body >
+    <main>
+      <div class="borde-superior">
+        <img src="./imagenes/logo-stylebus.png" class="logo-stylebus" alt="loguito de empresa">
+        <a href="./iniciarSesion.html"><img id="logo-login" src="./imagenes/login.png" alt="img de inicio de sesion"> </a>
+        <img id="logo-ayuda" src="./imagenes/ayuda.png" alt="img de requerir ayuda">
+        
+        <p> </p>
+      </div>  
+      <hr>
+
+      <div>
+      <form id="filtro-viajes" action="/enviar-respuesta">
+       <p>Buscá tu viaje ideal con StyleBus</p>
+
+       <select id="lista-terminales-partida" >
+        <option disabled selected>Seleccione una terminal de partida</option>
+      </select><br><br>
+      <select id="lista-terminales-destino">
+        <option disabled selected>Seleccione una terminal de destino</option>
+        <option></option>
+      </select><br><br>
+      <input id="filtro-fecha" type="date" placeholder="ingrese fecha de salida"><br><br>
+      <select id="tipo-omnibus">
+        <option disabled selected>Seleccione tipo de omnibus</option>
+        <option>Estandar</option>
+        <option>Estandar Plus</option>
+        <option>Premium</option>
+      </select><br><br>
+
+       <input id="ida-vuelta" type="checkbox"> Pasajes ida y vuelta<br><br>
+       <input type="button" onclick="ejecutarFiltro();">Buscar</button><br>
+
+      </form>
+    <script src="./js/producto.js"></script>
+    <script src="./js/cuentas.js"></script>
+    <script src="./js/index.js"></script>
+    
+    </div>
+
+    </main>
+    
+    
+  </body>
+</html>
